@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<!--
+	Caroline Anna Marie Ziegler
+-->
+<html>
+	<head>
+		<title>Caroline Anna Marie Ziegler</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo">Portfolio <em>by Caroline Anna Marie Ziegler</em></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="HealthcareProjects.html">Healthcare Projects</a></li>
+								<li class="current"><a href="UniversityProjects.html">University Projects</a></li>
+								<li><a href="Media.html">Media</a></li>
+								<li><a href="Blog.html">Blogs</a></li>
+								<li><a href="AboutMe.html">About Me</a></li>
+								<li><a href="MoreAboutMe.html">More About Me</a></li>
+								<li><a href="Contact.html">Contact</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-narrower">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header>
+												<h2 id="section0">University Projects</h2>
+												<p>All other projets done in Python, Excel and Power BI with no relation to healthcare</p>
+											</header>
+
+											<span class="image featured"><img src="images/why_dcu_connected.jpg" alt="" /></span>
+
+											<p>During the last two semesters at Dublin City University, I pursued a specialization in Data Analytics, concurrently engaging in modules encompassing Entrepreneurship, Strategy, and Business Ethics. The proficiencies cultivated within my major, encompassing proficiency in Python, SQL, Data Mining, and Data & Workflow Management, were not confined solely to the context of Data Analytics; rather, I successfully applied them in diverse projects spanning other academic modules. These acquired skills contributed comprehensively to my cognitive framework, fostering a more nuanced comprehension of data, and significantly enhancing my efficacy in the realm of data analysis. Subsequently, within the ensuing section of this portfolio titled "University Project," a succinct overview of select projects is presented, elucidating the extent to which the acquired competencies have been applied and propelled the aforementioned projects forward.</p>
+
+											<header>
+												<h2 id="section1">Demographics and Personality Dataset Analysis</h2>
+												<p>Missing values imputation, dataset join and regression analyses</p>
+											</header>
+
+											<p>In this project, I embarked on an ambitious journey to explore and analyze demographic and personality data through a series of meticulous data preprocessing and analysis steps using Python. The project's scope aimed at normalizing and imputing missing values within a demographics dataset comprising 122 rows and 16 columns, followed by merging it with a personality dataset to perform a unified dataset analysis, yielding insights into correlations, personality differences, and genetic traits.</p>
+
+											<p>The initial phase involved data normalization and imputation where I utilized Python's Pandas library to handle missing values across various columns such as daily travel to Dublin City University, CAO Points, average Year 1 exam results, seat row, and age. Notable techniques included partitioning the dataset to avoid imputation based on previously imputed data, employing mean substitution for daily travel distances, and utilizing linear regression models to estimate missing CAO Points and exam results. A median substitution was chosen for the missing age value, reflecting the dataset's distribution more accurately.</p>
+											<span class="image featured"><img src="images/perso_scatter.png" alt="" /></span>
+											<p><strong>Linear Regression Code</strong></p>
+											<span class="image featured"><img src="images/perso_linreg.png" alt="" /></span>
+
+											<p>Upon merging the demographics dataset with the personality dataset, challenges such as duplicate phone numbers and low match rates necessitated careful data management strategies, including the use of inner and outer joins to ensure a comprehensive dataset for analysis.</p>
+											<p><strong>T-Test Code</strong></p>
+											<span class="image featured"><img src="images/perso_ttest.png" alt="" /></span>
+											<p><strong>Dataset Join</strong></p>
+											<span class="image featured"><img src="images/perso_join.png" alt="" /></span>
+								
+											<p>The analysis of the unified dataset revealed interesting findings. Correlation assessments, linear regression models, and hypothesis testing illuminated relationships between height, weight, shoe size, and personality traits across genders and star signs. Notably, gender-based personality differences showed no significant disparities, while star sign comparisons revealed that Geminis are, on average, more thoughtful than Sagittarians, and Sagittarians are more assertive than Virgos. Additionally, an exploration into the genetic link between hair and eye color through label encoding and linear regression provided limited insights, suggesting a minimal relationship between these traits.</p>
+											<span class="image featured"><img src="images/perso_line.png" alt="" /></span>
+											<span class="image featured"><img src="images/perso_linreg_vis.png" alt="" /></span>
+
+											<p>In conclusion, despite the fabricated nature of the data and the challenges it posed, such as low correlations and the complexity of drawing meaningful insights, the project successfully demonstrated the application of diverse data preprocessing and analysis techniques. It highlighted the importance of rigorous data management and provided a nuanced understanding of personality traits across different demographics. The findings, particularly regarding personality differences by star signs, offer a glimpse into the potential of data analytics to uncover hidden patterns and relationships within complex datasets, even when the data may not be entirely authentic.</p>
+
+											<footer>
+												<a href="https://github.com/carolineziegler/personalityanalysis" class="button">View Project</a>
+												<a href="#section0" class="button to-top">Top of the Page</a>
+											</footer>
+
+
+											<header>
+												<h2 id="section2">Apple Quality Dataset Analysis</h2>
+												<p>Missing values imputation, dataset join and regression analyses</p>
+											</header>
+
+											<p>This project delved into analyzing apple quality through advanced data analytics, targeting the categorization of apples and predicting their quality. Initially, the data was prepared by loading it from a "Apple Quality" dataset, which involved cleaning by removing irrelevant entries and columns not needed for analysis, such as the apple identifier. This step was crucial for ensuring the data's quality before any further analysis.</p>
+
+											<p>With a pristine dataset, the project then moved towards exploratory data analysis (EDA), employing a combination of statistical techniques and visualization tools to uncover patterns, trends, and relationships within the data. This phase was instrumental in identifying the key features that influence apple quality, providing valuable insights that informed the selection of appropriate ML models for further analysis.</p>
+											<p><strong>Visualization of Data Distribution</strong></p>
+											<a href="#" class="image left"><img src="images/apple_dist.png" alt="" /></a>
+											<p><strong>Outlier Detection Visualization</strong></p>
+											<a href="#" class="image left"><img src="images/apple_whisker.png" alt="" /></a>
+											<p><strong>Variables Correlation Matrix</strong></p>
+											<a href="#" class="image left"><img src="images/apple_corr.png" alt="" /></a>
+
+											<p>The core of the analytical phase involved the application of the K-means clustering algorithm, a popular method for identifying groups or clusters within a dataset based on similarity measures. In this context, K-means was employed to segment the apples into distinct varieties, based on their quality attributes. This unsupervised learning approach allowed for the discovery of natural groupings in the data, highlighting the diversity of apple characteristics across different varieties.</p>
+											<p><strong>Linear Regression Code</strong></p>
+											<a href="#" class="image left"><img src="images/apple_linreg.png" alt="" /></a>
+											<p><strong>K-Mean Cluster ALgorithm Code</strong></p>
+											<a href="#" class="image left"><img src="images/apple_kmean.png" alt="" /></a>
+
+											<p>Further, logistic regression was utilized to predict the quality of apples based on a set of input features. This model was chosen for its ability to handle binary classification tasks, making it well-suited for determining whether an apple met a predefined quality standard. The performance of the logistic regression model was meticulously evaluated, with accuracy serving as the primary metric for assessing its predictive capability.</p>
+											<p><strong>Logistic Regression Code</strong></p>
+											<span class="image featured"><img src="images/apple_logreg.png" alt="" /></span>
+											<p><strong>Visualization of Cluster Distribution on Variables Juiciness and Sweetness</strong></p>
+											<span class="image featured"><img src="images/apple_scattercluster.png" alt="" /></span>
+											<p><strong>T-Test Code</strong></p>
+											<span class="image featured"><img src="images/apple_ttest.png" alt="" /></span>
+
+											<p>The conclusion of this analytical journey revealed significant insights into the factors influencing apple quality and the relationship between different apple varieties. The successful application of K-means clustering elucidated the distinct categories of apples present in the dataset, while logistic regression provided a robust framework for predicting apple quality with commendable accuracy.  In summary, this project demonstrated the power of ML in agricultural data analytics. </p>
+
+											
+											<footer>
+												<a href="https://github.com/carolineziegler/applequality" class="button">View Project</a>
+												<a href="#section0" class="button to-top">Top of the Page</a>
+											</footer>
+
+										</article>
+
+									<!-- Posts -->
+									<section class="wrapper style1">
+										<div class="container">
+											<div class="row">
+												<section class="col-12">
+													<div class="box post">
+														<a href="#" class="image left"><img src="images/excel_revenue.png" alt="" /></a>
+														<div class="inner">
+															<h3 id="section3">Revenue Controlling - Pharmaceutical Company</h3>
+															<p>In this Excel project for a mid-sized pharmaceutical company in Germany, a sophisticated revenue controlling mechanism was developed to enhance strategic planning and decision-making. The project centered on creating detailed sales plans for each sales territory, categorized into domestic, European, and overseas markets. Utilizing advanced Excel features such as pivot tables, the process involved generating sales statistics by territory and material group, allowing for dynamic sales forecasting and visualization. Sales plans were dynamically updated based on growth percentages, facilitating responsive planning adaptable to market changes. The final consolidation integrated individual territory plans into a comprehensive sales strategy, effectively utilizing Excel to improve business analytics and revenue management in a complex industry.</p>
+															<footer>
+																<a href="https://github.com/carolineziegler/excelprojects" class="button">View Project</a>
+																<a href="#section0" class="button to-top">Top of the Page</a>
+															</footer>
+														</div>
+													</div>
+												</section>
+											</div>
+											<div class="row">
+												<section class="col-12">
+													<div class="box post">
+														<a href="#" class="image left"><img src="images/excel_deezer.png" alt="" /></a>
+														<div class="inner">
+															<h3 id="section4">Value Calculation of Strategic Initiatives for Deezer</h3>
+															<p>In a strategic project for Deezer, a music streaming service, the aim was to drive growth and differentiate in the market. The initiative included a detailed analysis to project costs, revenue, and financial value up to 2030, visualized with graphs such as line and bar charts. The analysis identified key challenges not just in profitability but in how Deezer communicated its unique value, noting inefficiencies in marketing and app interface design. The proposed strategy focused on expanding market penetration by targeting demographic groups like Generation X and Baby Boomers in key markets, and extending reach in Middle and South Africa as well as the MENA regions, where untapped potential was identified. Recommendations for Deezer included improving customer-centricity by enhancing app functionality, revising pricing, and launching targeted marketing campaigns. The financial projections indicated significant potential gains in market share and financial value by 2030, facilitated by Excel’s forecasting and graphing tools which played a pivotal role in strategizing and visualizing the outcomes. This approach not only streamlined analyses but also underpinned strategic decision-making for Deezer.</p>
+															<footer>
+																<a href="https://github.com/carolineziegler/excelprojects" class="button">View Project</a>
+																<a href="#section0" class="button to-top">Top of the Page</a>
+															</footer>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+									</section>
+
+									<!-- Content -->
+
+									<article>
+										<header>
+											<h2 id="section5">Analysis of Economics & Well-Being Indicators in OECD Countries </h2>
+											<p>Project in Power BI</p>
+										</header>
+
+										<span class="image featured"><img src="images/OECDworldmap.png" alt="" /></span>
+										
+										<p>The Power BI project aimed at exploring and visualizing a wide range of indicators across OECD countries, focusing on economic, employment, education, and quality of life metrics. This comprehensive analysis utilized Power BI's advanced features for dynamic reporting and interactive visualization, fostering a deeper understanding of the datasets involved and extracting meaningful conclusions from the extensive data.</p>
+
+										<p><strong>Dataset Selection</strong></p>
+										<p>The project revolved around a carefully selected dataset provided by the OECD (Organization for Economic Co-operation and Development), which was chosen for its broad spectrum of societal well-being aspects. This dataset covered 34 critical economic and well-being indicators, offering a comparative view across OECD countries. The data, structured and cleaned for analysis, included metrics on housing quality and affordability, income and wealth, employment and job security, health and well-being, safety and leisure, and work-life balance.</p>
+
+										<p><strong>Activities and Analysis</strong></p>
+										<p>The analysis embarked on dissecting the selected dataset through Power BI's built-in statistical functions, aiming at uncovering data relationships and trends. The project leveraged Power BI dashboards for multivariate analysis visualizations and designed interactive reports. This enabled an in-depth exploration of the dataset, focusing on three main areas: economic indicators, employment and education metrics, and quality of life factors. The project undertook basic feature engineering and reviewed dataset metadata to align indicators with the research interests. Through meticulous data analysis, it dissected the dataset to extract significant findings, focusing on the correlation between various life quality indicators and personal earnings, life expectancy, and the overall economic status of the countries.</p>
+
+										<p><strong>Outputs and Insights</strong></p>
+										<p>The outputs of the project included a series of Power BI dashboards and reports that provided an interactive overview of key OECD economic indicators and a detailed comparison of various economic, employment, and education indicators across OECD countries. These visualizations highlighted trends, outliers, and correlations, offering insights into the factors influencing life expectancy, personal earnings, and overall quality of life in OECD nations.</p>
+										<span class="image featured"><img src="images/OECDemp_ed.png" alt="" /></span>
+										
+										<p>Key findings revealed positive correlations between life expectancy and GDP per capita, as well as the quality of support networks, while negative correlations were observed with factors like homicide rates and dwellings without basic facilities. Additionally, the analysis provided a global perspective on economics and well-being, showcasing how higher personal earnings and better life satisfaction are associated with improved environmental and safety conditions.</p>
+										<span class="image featured"><img src="images/OECDind.png" alt="" /></span>
+
+										<p><strong>Conclusion</strong></p>
+										<p>This university project effectively demonstrated the power of Power BI in analyzing and visualizing complex datasets, leading to insightful discoveries about the well-being and economic status of OECD countries. By harnessing the capabilities of Power BI, the project offered a comprehensive representation of key data, enabling impactful data-driven decision-making and providing a valuable resource for further academic and policy research. This project is a prime example of how advanced data visualization tools like Power BI can be utilized in academic settings to foster a deeper understanding of global economic and social indicators, contributing significantly to the discourse on societal well-being and economic development.</p>
+
+
+										<footer>
+											<a href="https://github.com/carolineziegler/OECDpowerBI" class="button">View Project</a>
+											<a href="#section0" class="button to-top">Top of the Page</a>
+										</footer>
+
+									</article>
+								
+								<!-- Posts -->
+								<section class="wrapper style1">
+									<div class="container">
+										<div class="row">
+											<section class="col-12">
+												<div class="box post">
+													<a href="#" class="image left"><img src="images/frostrisk.jpg" alt="" /></a>
+													<div class="inner">
+														<h3 id="section6">Predicting Frost Risk for Vineyards</h3>
+														<p>In my endeavor to enhance my Python skills beyond university studies, I engaged in courses and projects through Kubicle, focusing on a specific project for a winery to improve their frost forecasting processes. This project involved sophisticated data handling, where I accessed datasets via URL and HTML in Python and explored a customer dataset stored locally. The main challenge was to merge these datasets through a join operation, effectively synthesizing information. A key feature of the project was implementing Live Data Forecasts by integrating real-time forecasts via an API into the customer dataset, thus improving its utility and relevance. This project demonstrated my ability to manage diverse data sources, merge different datasets, and incorporate live data, significantly enhancing my Python proficiency and real-world application skills in data management and integration.</p>
+														<footer>
+															<a href="https://github.com/carolineziegler/kubicleprojects" class="button">View Project</a>
+															<a href="#section0" class="button to-top">Top of the Page</a>
+														</footer>
+													</div>
+												</div>
+											</section>
+										</div>
+										<div class="row">
+											<section class="col-12">
+												<div class="box post">
+													<a href="#" class="image left"><img src="images/nutritions.jpg" alt="" /></a>
+													<div class="inner">
+														<h3 id="section7">Cleaning Nutritional Data</h3>
+														<p>In another project aimed at refining my skills from university, I conducted a comprehensive data cleaning project on nutritional data through Kubicle. This involved the assimilation and cleansing of various datasets merged via a union join operation. The project's tasks included converting data types within columns, removing extraneous units from data cells, correcting data ranges, rectifying categorical errors, eliminating null values, and removing duplicate entries. A significant part of the project was the detection and correction of calorie calculation errors, enhancing the dataset's accuracy. These cleaning processes improved the dataset's quality, making it suitable for in-depth analysis and subsequent research. This project not only bolstered my proficiency in data cleaning methodologies but also highlighted the critical role of meticulous data curation in enabling meaningful and accurate analyses.</p>
+														<footer>
+															<a href="https://github.com/carolineziegler/kubicleprojects" class="button">View Project</a>
+															<a href="#section0" class="button to-top">Top of the Page</a>
+														</footer>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</section>
+
+								<!-- Content -->
+
+								<article>
+									<header>
+										<h2 id="section8">Survey Music Streaming </h2>
+										<p>Better understanding of music streaming users</p>
+									</header>
+
+									<span class="image featured"><img src="images/deezer.jpeg" alt="" /></span>
+
+									<p>In the context of the Business Strategy module during the seventh and eighth semesters, a notable project involved the strategic analysis and consultation of a company. Specifically, my group undertook the task of conducting a comprehensive survey aimed at gaining profound insights into the consumer base of music streaming providers. The survey encompassed inquiries regarding participants' demographics and their current status as customers or non-customers of music streaming services.</p>
+
+									<p>Upon categorizing participants into non-customers and customers, distinct sets of questions were directed towards each group. For non-customers, the primary focus was on elucidating the reasons underpinning their decision to refrain from utilizing a music streaming platform. Conversely, customers were queried on various aspects, including their preferred platforms, streaming behavior, satisfaction levels, and an assessment of specific features. To execute this survey, Google Forms was initially employed. However, the analysis conducted through Google Forms proved to be insufficient, lacking in depth, and necessitating data cleaning. Consequently, the dataset underwent a meticulous cleaning process and was subjected to a more detailed analysis and visualization using Python.</p>
+
+									<p>The Python analysis concentrated on columns where Google Forms did not yield definitive results, particularly those involving free-form fields or open-ended response options. Although not every column underwent detailed analysis in Python, an efficient focus was directed towards pivotal columns. The dataset was initially cleansed by adjusting column headings, eliminating irrelevant columns, and rectifying errors in input, ensuring a coherent dataset for subsequent analysis.</p>
+
+									<p>Demographic analyses were performed on all survey participants prior to the creation of two distinct data subsets: one for non-customers and another for customers. Both subsets underwent a re-evaluation of demographics, followed by visualization. Subsequently, non-customer columns were cleared and clustered to elucidate reasons for abstaining from music streaming, alongside alternative preferences. For the customer dataset, a K-Means algorithm was employed to cluster responses to free-form texts on satisfaction and dissatisfaction into five clusters each. This clustering facilitated the exploration of relationships between music streaming platforms and satisfaction or dissatisfaction reasons, visualized through scatterplots. Furthermore, critical insights gleaned from the data were visually presented.</p>
+
+									<p>The refined and in-depth results obtained through the Python analysis were crucial in formulating findings and recommendations. The synthesized data analysis was then exported and encapsulated in an Excel file for submission, providing a comprehensive and well-supported strategic analysis and consulting report.</p>
+
+									<footer>
+										<a href="https://github.com/carolineziegler/musicstreaming" class="button">View Project</a>
+										<a href="#section0" class="button to-top">Top of the Page</a>
+									</footer>
+
+
+									<header>
+										<h2 id="section9">Smart Luggage Customer Analysis</h2>
+										<p>Better understanding of customers and non-customers of smart luggage</p>
+									</header>
+
+									<span class="image featured"><img src="images/Amtagio.png" alt="" /></span>
+
+									<p>As a crucial component of the New Enterprise Development module, our team embarked on a comprehensive survey exploring the realm of Smart Luggage and the experiences associated with traveling while using such technology. This initiative was driven by the dual purpose of gathering essential data from potential customers for our in-development product and gaining deeper insights into the market landscape.</p>
+
+									<p>To execute this endeavor, we crafted an all-encompassing survey deployed through Google Forms. While the platform itself lacked certain functionalities for thorough data cleaning and qualitative evaluation from open-text responses, we took the initiative to refine, process, and visualize the dataset utilizing Python.</p>
+
+									<p>The data underwent a meticulous cleaning process, including the exclusion of responses from participants under 18 for compliance reasons. A significant challenge arose from the nature of the survey, where a substantial portion of questions allowed for free-form responses. Consequently, our primary mission became the segmentation of these diverse answers into cohesive clusters for a more insightful analysis and visualization. A paramount objective of our analysis was to explore potential correlations, specifically investigating whether age played a role in determining price sensitivity for our product. Surprisingly, no discernible correlation was found in this respect, challenging initial assumptions.</p>
+
+									<p>Through the meticulous cleansing, analysis, and visualization of data using Python, we not only gained valuable insights but also utilized this refined information for the feasibility study of our product. The synthesis of our Python analysis findings was efficiently compiled in Excel, underscoring the pivotal role Python played in making the data actionable for our project. In essence, the success of our analysis owes a significant debt to the power and flexibility afforded by Python in handling complex data sets.</p>
+
+									<footer>
+										<a href="https://github.com/carolineziegler/smartluggage" class="button">View Project</a>
+										<a href="#section0" class="button to-top">Top of the Page</a>
+									</footer>
+
+									<header>
+										<h2 id="section10">Sentiment Analysis for Twitter - Report</h2>
+										<p>Financial and technicial feasibility study - literature review</p>
+									</header>
+
+									<span class="image featured"><img src="images/sentiment.png" alt="" /></span>
+
+									<p>This case study delineates the journey undertaken to assess the feasibility of developing a real-time Twitter sentiment analysis software for Amtagio, a nascent venture in the travel accessories sector. With an emphasis on influencer-led marketing strategies, Amtagio aimed to harness the analytical power of sentiment analysis to gauge public perception of its digital tag product line. The project scrutinized various facets, including technical capabilities, financial implications, and potential return on investment, against a backdrop of a €50,000 budget and an ambitious deployment timeline.</p>
+
+									<p>Amtagio's strategic marketing focus hinges on leveraging Twitter for influencer campaigns, necessitating a sophisticated tool to analyze sentiments expressed in real-time. This tool's primary aim was to decode public sentiment, offering immediate feedback on campaign reach and impact. However, the undertaking faced initial uncertainties around budget adequacy, data access challenges, development complexity, and requisite technical infrastructure.</p>
+
+									<p><strong>The project was initiated with a dual objective:</strong>
+										<p>•	Technical Feasibility: Determine whether existing technologies and open-source tools could be orchestrated to build a robust, real-time Twitter sentiment analysis tool tailored to Amtagio's marketing needs.</p>
+										<p>•	Financial Feasibility: Assess if the allocated budget of €50,000 was sufficient to cover development and operational costs, ensuring a viable return on investment.</p>
+
+									<p>The methodology encompassed a comprehensive evaluation of available technologies and development frameworks, with a specific focus on natural language processing (NLP) techniques and cloud computing solutions. The study leveraged the Twitter API for data retrieval, evaluated the BERT model for sentiment analysis, and explored Amazon Web Services (AWS) for scalable cloud infrastructure. A parallel financial analysis was conducted to estimate the total cost of ownership, considering both development and operational expenses.</p>
+
+									<p><strong>Findings:</strong>
+										<p>•	Technical Evaluation: The project confirmed the technical viability of constructing a sentiment analysis tool utilizing the Twitter API, BERT for NLP tasks, and AWS for cloud infrastructure. It established a roadmap for developing a prototype capable of meeting Amtagio's requirements for real-time data analysis and scalability.</p>
+										<p>•	Financial Analysis: The financial analysis revealed that while the initial development costs fell within the projected budget, ongoing operational expenses, particularly for cloud services and data processing, could exceed the initial allocation. The study suggested avenues for cost optimization and highlighted the importance of strategic financial planning for sustainable project execution.</p>
+
+									<p>The feasibility study concluded that while developing a sentiment analysis software for Amtagio is technically feasible and can provide valuable insights into marketing campaign effectiveness, careful consideration of long-term financial sustainability is crucial. The project underscored the need for adaptive budgeting to accommodate evolving technical requirements and operational expenses. It recommended proceeding with the development of a minimum viable product (MVP) to further validate the concept and refine cost estimates.</p>
+
+									<footer>
+										<a href="https://github.com/carolineziegler/sentimentreviewX" class="button">View Project</a>
+										<a href="#section0" class="button to-top">Top of the Page</a>
+									</footer>
+
+								</article>
+							
+								
+								</div>
+							</div>
+							<div class="col-4 col-12-narrower">
+								<div id="sidebar">
+
+									<!-- Sidebar -->
+
+										<section>
+											<h3>GitHub Repositories</h3>
+											<p>All projects including the raw data files, analyses files as well as additional files are uploaded on my GitHub page. You can navigate there by clicking on the link below.</p>
+											<footer>
+												<a href="https://github.com/carolineziegler" class="button">GitHub Page</a>
+											</footer>
+										</section>
+
+										<section>
+											<h3>Project Navigation</h3>
+											<ul class="links">
+												<li><a href="#section1">Demographics & Personality Analysis</a></li>
+												<li><a href="#section2">Apple Quality Dataset Analysis</a></li>
+												<li><a href="#section3">Revenue Controlling - Pharma Company</a></li>
+												<li><a href="#section4">Value Calculation of Strategic Initiatives</a></li>
+												<li><a href="#section5">Economics and Well-Being Indicators OECD </a></li>
+												<li><a href="#section6">Predicting Frost Risk for Vineyards</a></li>
+												<li><a href="#section7">Cleaning Nutritional Data</a></li>
+												<li><a href="#section8">Survey Music Streaming</a></li>
+												<li><a href="#section9">Smart Luggage Customer Analysis</a></li>
+												<li><a href="#section10">Sentiment Analysis for Twitter</a></li>
+											</ul>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Location</h3>
+								<p>Dublin, Ireland</p>
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Contact</h3>
+								<p>caroline.ziegler2@mail.dcu.ie</p>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/carolineziegler" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/caroline-anna-marie-ziegler-707521210/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Caroline Anna Marie Ziegler. All rights reserved</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
